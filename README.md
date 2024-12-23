@@ -60,22 +60,30 @@ Figure -02 HALF Subtractor
 **Program:**
 
 ~~~
+HALF ADDER
 
-i)
-module funct1(a,b,c,d,f1);
-input a,b,c,d;
-output f1;
-assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+module ha(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= ( a & b);
 endmodule
 ~~~
 ~~~
-ii)
-module funct2(w,x,y,z,f2);
-input w,x,y,z;
-output f2;
-assign f2=((~y & z)|( w & y )|(x & y));
+ii)HALF SUBTRACTOR
+
+module hs(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
 endmodule
 ~~~
+
+
+
+
+
 
 Developed by:GURUPARAN G RegisterNumber:*24001677
 
