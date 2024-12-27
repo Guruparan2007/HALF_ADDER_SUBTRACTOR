@@ -67,7 +67,7 @@ RegisterNumber:*24001677
 
 ~~~
 
-Half_adder
+*Half_adder*
 module halfadd_top(a,b,sum,carry);
 input a,b;
 output sum,carry; 
@@ -75,13 +75,15 @@ output sum,carry;
  assign carry = a & b;
 endmodule
 
-Half_subtractor
+*Half_subtractor*
 module halfsub_top(a,b,D,Bo);
 input a,b;
 output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
 assign D = a ^ b;
   assign Bo = ~a & b;
 endmodule
+
+
 
 ~~~
 
@@ -93,19 +95,20 @@ endmodule
 **RTL Schematic**
 
 
-![Screenshot 2024-12-27 094923](https://github.com/user-attachments/assets/40f1ed12-ce57-48fa-bbf3-0556395416ee)
+![Screenshot 2024-12-27 101043](https://github.com/user-attachments/assets/771cd95b-ef8e-4ecd-977d-08ed82613df9)
+
+
+![Screenshot 2024-12-27 101058](https://github.com/user-attachments/assets/6c4560df-e315-4ba0-804c-79e6d9ed166e)
+
 
 
 **TIMINING WAVEDIAGRAM**
 
-HALF ADDER:
-
- ![Screenshot 2024-12-27 093311](https://github.com/user-attachments/assets/bae099e2-45ca-4932-b9cf-67b622286f07)
-
-HALF SUBRACTER:
+![Screenshot 2024-12-27 101115](https://github.com/user-attachments/assets/5273c752-6b27-48ba-ab29-3ef32424e5d4)
 
 
-![Screenshot 2024-12-27 093335](https://github.com/user-attachments/assets/ca2dec7e-e091-4c03-bd8d-9bc67b8edf96)
+![Screenshot 2024-12-27 101130](https://github.com/user-attachments/assets/a558692f-956e-4de7-b681-881bd8a51220)
+
 
 
 **Result:**
