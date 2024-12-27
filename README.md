@@ -1,8 +1,10 @@
-**DATE:**8|10|24.
+
 
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
+
+DATE:8|10|24.
 
 **AIM:**
 
@@ -37,10 +39,9 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
-![Screenshot 2024-12-23 142009](https://github.com/user-attachments/assets/a3c843c9-875a-4771-a7aa-c7ab4609bf42)
 
+![Screenshot 2024-12-27 094901](https://github.com/user-attachments/assets/a11a48a6-13e1-4a75-9f88-e40810b60828)
 
-![Screenshot 2024-12-23 142030](https://github.com/user-attachments/assets/d808fc94-eaab-4b55-88a4-36efaf092ed8)
 
 
 
@@ -56,49 +57,56 @@ Figure -02 HALF Subtractor
 
 5.	For different input combinations generate the timing diagram.
 
+~~~
+
+Developed by:GURUPARAN G
+RegisterNumber:*24001677
+~~~
 
 **Program:**
 
 ~~~
-HALF ADDER
 
-module ha(a,b,sum,carry);
+Half_adder
+module halfadd_top(a,b,sum,carry);
 input a,b;
-output sum,carry;
-assign sum= (a ^ b);
-assign carry= ( a & b);
+output sum,carry; 
+ assign sum = a^b;
+ assign carry = a & b;
 endmodule
-~~~
-~~~
-ii)HALF SUBTRACTOR
 
-module hs(a,b,difference,borrow);
+Half_subtractor
+module halfsub_top(a,b,D,Bo);
 input a,b;
-output difference,borrow;
-assign difference= (a ^ b);
-assign borrow= ( ~a & b);
+output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+assign D = a ^ b;
+  assign Bo = ~a & b;
 endmodule
+
 ~~~
 
 
 
 
 
-
-Developed by:GURUPARAN G RegisterNumber:*24001677
 
 **RTL Schematic**
 
-![Screenshot 2024-12-23 140316](https://github.com/user-attachments/assets/4274008f-e1bd-4c13-9760-e63a85180e53)
 
+![Screenshot 2024-12-27 094923](https://github.com/user-attachments/assets/40f1ed12-ce57-48fa-bbf3-0556395416ee)
 
-![Screenshot 2024-12-23 141243](https://github.com/user-attachments/assets/7489d924-47ec-4e09-a3a7-60be6de35786)
 
 **TIMINING WAVEDIAGRAM**
 
-![Screenshot 2024-12-23 140542](https://github.com/user-attachments/assets/d727661d-a207-4986-a294-8676aa61e612)
+HALF ADDER:
 
-![Screenshot 2024-12-23 141427](https://github.com/user-attachments/assets/8e3899c2-e0a9-4c31-bbf5-a3412190d7c5)
+ ![Screenshot 2024-12-27 093311](https://github.com/user-attachments/assets/bae099e2-45ca-4932-b9cf-67b622286f07)
+
+HALF SUBRACTER:
+
+
+![Screenshot 2024-12-27 093335](https://github.com/user-attachments/assets/ca2dec7e-e091-4c03-bd8d-9bc67b8edf96)
+
 
 **Result:**
 
