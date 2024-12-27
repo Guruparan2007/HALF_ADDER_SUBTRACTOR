@@ -94,19 +94,19 @@ endmodule
 
 **RTL Schematic**
 
-
+HALF ADDER:
 ![Screenshot 2024-12-27 101043](https://github.com/user-attachments/assets/771cd95b-ef8e-4ecd-977d-08ed82613df9)
 
-
+HALF SUBRACTED:
 ![Screenshot 2024-12-27 101058](https://github.com/user-attachments/assets/6c4560df-e315-4ba0-804c-79e6d9ed166e)
 
 
 
-**TIMINING WAVEDIAGRAM**
-
+**TIMING  WAVEDIAGRAM**
+HALF ADDER:
 ![Screenshot 2024-12-27 101115](https://github.com/user-attachments/assets/5273c752-6b27-48ba-ab29-3ef32424e5d4)
 
-
+HALF SUBRACTED:
 ![Screenshot 2024-12-27 101130](https://github.com/user-attachments/assets/a558692f-956e-4de7-b681-881bd8a51220)
 
 
